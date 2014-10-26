@@ -12,7 +12,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 $decoder = new Decoder();
 
-$json = '{"id": 2, "name": "Nissan"}';
+$json = '{"name": "Nissan"}';
 $make = $decoder->decode('Yjv\CodeProject\CarSalesMan\Entity\Make', $json);
 echo 'json: ', PHP_EOL, $json, PHP_EOL;
 echo PHP_EOL;

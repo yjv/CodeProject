@@ -13,7 +13,8 @@
     },
     "require-dev":{
         "mockery/mockery": "@dev",
-        "fzaninotto/faker": "~1.3"
+        "fzaninotto/faker": "~1.3",
+        "symfony/process": "*"
     },
     "autoload": {
         "psr-0": {
