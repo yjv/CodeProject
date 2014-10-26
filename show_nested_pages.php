@@ -5,14 +5,14 @@
  * Date: 10/25/14
  * Time: 9:27 PM
  */
-$loader = require_once __DIR__.'/../vendor/autoload.php';
+$loader = require_once __DIR__ . '/../vendor/autoload.php';
 
 use Yjv\CodeProject\NestedNavigation\PageIterator;
 use Yjv\CodeProject\NestedNavigation\Repository\PageRepository;
 
 $faker = Faker\Factory::create();
 
-$pages = include __DIR__.'/Tests/Fixtures/pages.php';
+$pages = include __DIR__ . '/NestedNavigation/Tests/Fixtures/pages.php';
 
 $pageRepository = new PageRepository($pages);
 

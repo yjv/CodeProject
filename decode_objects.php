@@ -8,7 +8,7 @@
 
 use Yjv\CodeProject\JsonDecode\Decoder;
 
-require_once __DIR__.'/../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 $decoder = new Decoder();
 
