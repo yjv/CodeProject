@@ -6,10 +6,10 @@
  * Time: 11:21 PM
  */
 
-namespace JsonDecode;
+namespace Yjv\CodeProject\JsonDecode;
 
 
 class Decoder 
 {
-
+    protected $reflectionProperties = array();
 } 

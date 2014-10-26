@@ -5,7 +5,7 @@
  * Date: 10/23/14
  * Time: 10:17 PM
  */
-namespace CarSalesMan\Entity;
+namespace Yjv\CodeProject\CarSalesMan\Entity;
 
 
 class Model 

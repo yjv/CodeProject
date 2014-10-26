@@ -1,1 +1,8 @@
-.idea
+/phpunit.xml
+/cov
+/vendor
+/.settings
+/.buildpath
+/.project
+/.idea
+composer.lock
