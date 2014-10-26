@@ -7,7 +7,9 @@
  */
 use Yjv\CodeProject\NestedNavigation\Entity\Page;
 
-return [
+$faker = Faker\Factory::create();
+
+return array(
 
     new Page(
         1,
@@ -62,4 +64,4 @@ return [
         $faker->word,
         7
     )
-];
+);

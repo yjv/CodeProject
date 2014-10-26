@@ -45,12 +45,12 @@ class PageRepository
     {
         $id = $page->getId();
 
-        return array_filter(
+        return array_values(array_filter(
             $this->pages,
             function (Page $page) use ($id)
             {
                 return $page->getParent() == $id;
             }
-        );
+        ));
     }
 } 

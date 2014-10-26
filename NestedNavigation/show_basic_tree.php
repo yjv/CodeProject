@@ -12,7 +12,7 @@ use Yjv\CodeProject\NestedNavigation\Repository\PageRepository;
 
 $faker = Faker\Factory::create();
 
-$pages = include __DIR__.'/pages.php';
+$pages = include __DIR__.'/Tests/Fixtures/pages.php';
 
 $pageRepository = new PageRepository($pages);
 
