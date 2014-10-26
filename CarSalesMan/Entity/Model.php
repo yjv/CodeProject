@@ -12,10 +12,12 @@ class Model
 {
     protected $id;
     protected $make;
+    protected $name;
 
-    public function __construct($id, Make $make)
+    public function __construct($id, $name, Make $make)
     {
         $this->id = $id;
+        $this->name = $name;
         $this->make = $make;
     }
 
@@ -28,7 +30,16 @@ class Model
     }
 
     /**
-     * @return \Make
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+
+    /**
+     * @return Make
      */
     public function getMake()
     {

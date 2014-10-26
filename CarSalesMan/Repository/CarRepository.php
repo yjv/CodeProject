@@ -6,7 +6,7 @@
  * Time: 10:24 PM
  */
 
-namespace Yjv\CodeProject\CarSalesMan\Manager;
+namespace Yjv\CodeProject\CarSalesMan\Repository;
 
 
 use Yjv\CodeProject\CarSalesMan\Entity\Make;
@@ -34,6 +34,21 @@ class CarRepository
      */
     public function findAllByModel(Model $model, SalesMan $salesMan = null)
     {
+
+    }
+
+    /**
+     * find all cars of a certain model optionally filtered by a salesman
+     *
+     * @param Model $model
+     * @param $year
+     * @param SalesMan $salesMan
+     */
+    public function findAllByModelAndYear(
+        Model $model,
+        $year,
+        SalesMan $salesMan = null
+    ) {
 
     }
 

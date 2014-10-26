@@ -12,11 +12,15 @@ class SalesMan
 {
     protected $id;
     protected $username;
+    protected $firstName;
+    protected $lastName;
 
-    public function __construct($id, $username)
+    public function __construct($id, $username, $firstName, $lastName)
     {
         $this->id = $id;
-        $this->username = (string)$username;
+        $this->username = $username;
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
     }
 
     /**
@@ -33,5 +37,21 @@ class SalesMan
     public function getUsername()
     {
         return $this->username;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFirstName()
+    {
+        return $this->firstName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLastName()
+    {
+        return $this->lastName;
     }
 }
