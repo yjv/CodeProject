@@ -8,7 +8,7 @@
 
 use Yjv\CodeProject\JsonDecode\Decoder;
 
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 $decoder = new Decoder();
 
@@ -27,5 +27,3 @@ echo 'json: ', PHP_EOL, $json, PHP_EOL;
 echo PHP_EOL;
 echo 'Decoded as an instance of Yjv\CodeProject\NestedNavigation\Entity\Page:', PHP_EOL;
 var_dump($make);
-
-echo serialize($make);

@@ -5,7 +5,7 @@
  * Date: 10/25/14
  * Time: 9:27 PM
  */
-$loader = require_once __DIR__ . '/../vendor/autoload.php';
+$loader = require_once __DIR__ . '/vendor/autoload.php';
 
 use Yjv\CodeProject\NestedNavigation\PageIterator;
 use Yjv\CodeProject\NestedNavigation\Repository\PageRepository;
