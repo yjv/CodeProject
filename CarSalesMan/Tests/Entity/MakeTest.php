@@ -16,13 +16,8 @@ class MakeTest extends \PHPUnit_Framework_TestCase
     public function testGetters()
     {
         $faker = \Faker\Factory::create();
-        $id = $faker->randomNumber();
         $name = $faker->word;
-        $make = new Make(
-            $id,
-            $name
-        );
-        $this->assertEquals($id, $make->getId());
+        $make = new Make($name);
         $this->assertEquals($name, $make->getName());
     }
 }

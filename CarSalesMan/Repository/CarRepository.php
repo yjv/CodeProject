@@ -16,6 +16,16 @@ use Yjv\CodeProject\CarSalesMan\Entity\SalesMan;
 class CarRepository
 {
     /**
+     * find all cars optionally filtered by a specific salesman
+     *
+     * @param SalesMan $salesMan
+     */
+    public function findAll(SalesMan $salesMan = null)
+    {
+
+    }
+
+    /**
      * find all cars of a certain make optionally filtered by a specific salesman
      *
      * @param Make $make

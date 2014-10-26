@@ -10,21 +10,11 @@ namespace Yjv\CodeProject\CarSalesMan\Entity;
 
 class Make 
 {
-    protected $id;
     protected $name;
 
-    public function __construct($id, $name)
+    public function __construct($name)
     {
-        $this->id = $id;
         $this->name = $name;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getId()
-    {
-        return $this->id;
     }
 
     /**

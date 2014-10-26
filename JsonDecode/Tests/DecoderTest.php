@@ -20,10 +20,10 @@ class DecoderTest extends \PHPUnit_Framework_TestCase
     {
         $decoder = new Decoder();
 
-        $json = '{"id": 2, "name": "Nissan"}';
+        $json = '{"name": "Nissan"}';
         $make = $decoder->decode('Yjv\CodeProject\CarSalesMan\Entity\Make', $json);
 
-        $this->assertEquals(new Make(2, 'Nissan'), $make);
+        $this->assertEquals(new Make('Nissan'), $make);
 
         $json = '{"id": 5, "name": "Page 1", "content": "This is some content", "parent": 7}';
         $page = $decoder->decode('Yjv\CodeProject\NestedNavigation\Entity\Page', $json);

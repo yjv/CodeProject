@@ -24,6 +24,19 @@ class CarRepositoryTest extends \PHPUnit_Framework_TestCase
         $this->repository = new CarRepository();
     }
 
+    public function testFindAll()
+    {
+        $this->repository->findAll();
+    }
+
+    public function testFindAllWithSalesMan()
+    {
+        $faker = \Faker\Factory::create();
+        $this->repository->findAll(
+            new SalesMan($faker->randomNumber(), $faker->word, $faker->word, $faker->word)
+        );
+    }
+
     public function testFindAllByMake()
     {
         $faker = \Faker\Factory::create();
@@ -89,13 +102,13 @@ class CarRepositoryTest extends \PHPUnit_Framework_TestCase
         );
     }
 
-    public function testFindAllById()
+    public function testFindById()
     {
         $faker = \Faker\Factory::create();
         $this->repository->findById($faker->randomNumber());
     }
 
-    public function testFindAllByIdWithSalesMan()
+    public function testFindByIdWithSalesMan()
     {
         $faker = \Faker\Factory::create();
         $this->repository->findById(
